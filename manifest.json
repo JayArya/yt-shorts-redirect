@@ -1,0 +1,22 @@
+{
+  "name": "YT-Shorts-Redirect",
+  "version": "1.0.0",
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "description": "Redirect every YT Shorts video to the old Default View. Works without any scripts",
+  "manifest_version": 3,
+  "author": "Jayant Arya",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "YT-Shorts-Redirect"
+  },
+  "host_permissions": ["*://youtube.com/*", "*://www.youtube.com/*"],
+  "permissions": ["declarativeNetRequest"]
+}
